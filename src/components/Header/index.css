@@ -1,0 +1,30 @@
+.header-bg-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272727;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.header-logo {
+  width: 120px;
+}
+.header-inner-cont {
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-para {
+  color: #ffffff;
+}
+.logout-btn {
+  background-color: #4f46e5;
+  border: none;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
