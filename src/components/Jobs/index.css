@@ -5,17 +5,51 @@
   padding: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  display: flex;
 }
 .jobs-left-cont {
   width: 30%;
 }
-.profile-bg-cont {
-  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
-  background-size: cover;
-  width: 100%;
-  padding: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+.checkbox-label {
+  color: #ffffff;
+}
+.jobs-right-cont {
+  width: 70%;
+  padding: 20px;
+}
+.search-input-cont {
+  border: 1px solid #cbd5e1;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  padding-left: 15px;
+}
+.input-search {
+  background-color: transparent;
+  width: 90%;
+  height: 100%;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+.search-btn {
+  width: 10%;
+  height: 100%;
+  border: none;
+  background-color: #272727;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.left-hr {
+  color: #7e858e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.filter-grp {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
 }
