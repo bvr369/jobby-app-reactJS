@@ -1,7 +1,7 @@
 .jobs-bg-cont {
   background-color: #000000;
   min-height: 86vh;
-  width: 100vw;
+  width: 100%;
   padding: 20px;
   padding-left: 40px;
   padding-right: 40px;
@@ -16,6 +16,7 @@
 .jobs-right-cont {
   width: 70%;
   padding: 20px;
+  padding-top: 0px;
 }
 .search-input-cont {
   border: 1px solid #cbd5e1;

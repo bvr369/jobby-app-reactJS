@@ -1,0 +1,47 @@
+.job-card-bg-cont {
+  background-color: #272727;
+  padding: 16px;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.logo-title-cont {
+  display: flex;
+  align-items: flex-start;
+}
+.job-card-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* border: solid #ffffff; */
+}
+.job-card-company-logo {
+  width: 60px;
+  margin-right: 12px;
+}
+.job-card-star {
+  color: #fbbf24;
+  padding-top: 3px;
+}
+.job-card-rating {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.loc-or-type-cont {
+  display: flex;
+  align-items: flex-start;
+}
+.job-card-loc-emp-type-cont {
+  display: flex;
+}
+.job-card-loc-emp-type-sal-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.job-card-description-header {
+  font-size: 20px;
+}

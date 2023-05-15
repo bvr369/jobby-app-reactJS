@@ -43,6 +43,10 @@ class ProfileDetails extends Component {
     }
   }
 
+  getDetails = () => {
+    this.getProfileDetails()
+  }
+
   successProfile = () => {
     const {profileDetails} = this.state
     const {name, profileImageUrl, shortBio} = profileDetails
@@ -57,7 +61,11 @@ class ProfileDetails extends Component {
 
   failureProfile = () => (
     <div className="profile-failure-bg-cont">
-      <button type="button" className="profile-retry-btn">
+      <button
+        type="button"
+        className="profile-retry-btn"
+        onClick={this.getDetails}
+      >
         Retry
       </button>
     </div>
