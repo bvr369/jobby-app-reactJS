@@ -52,7 +52,7 @@ class ProfileDetails extends Component {
     const {name, profileImageUrl, shortBio} = profileDetails
     return (
       <div className="profile-bg-cont">
-        <img src={profileImageUrl} alt={name} className="profile-image" />
+        <img src={profileImageUrl} alt="profile" className="profile-image" />
         <h1 style={{color: '#6366f1', marginTop: '0px'}}>{name}</h1>
         <p style={{color: ' #7e858e'}}>{shortBio}</p>
       </div>

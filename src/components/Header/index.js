@@ -11,26 +11,34 @@ const Header = props => {
   }
 
   return (
-    <div className="header-bg-cont">
-      <Link to="/">
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-          alt="website logo"
-          className="header-logo"
-        />
-      </Link>
-      <div className="header-inner-cont">
-        <Link to="/" style={{textDecoration: 'none'}}>
-          <p className="header-para">Home</p>
-        </Link>
-        <Link to="/jobs" style={{textDecoration: 'none'}}>
-          <p className="header-para">Jobs</p>
-        </Link>
-      </div>
+    <nav className="header-bg-cont">
+      <ul style={{listStyle: 'none', paddingLeft: '0px'}}>
+        <li>
+          <Link to="/">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+              alt="website logo"
+              className="header-logo"
+            />
+          </Link>
+        </li>
+      </ul>
+      <ul className="header-inner-cont">
+        <li>
+          <Link to="/" style={{textDecoration: 'none'}}>
+            <p className="header-para">Home</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="/jobs" style={{textDecoration: 'none'}}>
+            <p className="header-para">Jobs</p>
+          </Link>
+        </li>
+      </ul>
       <button type="submit" className="logout-btn" onClick={onClickLogout}>
         Logout
       </button>
-    </div>
+    </nav>
   )
 }
 

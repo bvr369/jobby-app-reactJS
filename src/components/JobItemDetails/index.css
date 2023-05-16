@@ -1,0 +1,11 @@
+.job-data-bg-cont {
+  background-color: #000000;
+  padding: 50px;
+}
+.job-data-card-bg-cont {
+  padding: 40px;
+  background-color: #272727;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-top: 20px;
+}

@@ -1,0 +1,7 @@
+.skill-card-cont {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+  margin-bottom: 60px;
+  min-width: 160px;
+}

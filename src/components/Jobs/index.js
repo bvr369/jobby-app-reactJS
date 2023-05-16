@@ -152,9 +152,13 @@ class Jobs extends Component {
         )
       case jobsApiStatusOptions.success:
         if (jobsList.length > 0) {
-          return jobsList.map(each => (
-            <JobCard key={each.id} jobDetails={each} />
-          ))
+          return (
+            <ul style={{listStyle: 'none', paddingLeft: '0px'}}>
+              {jobsList.map(each => (
+                <JobCard key={each.id} jobDetails={each} />
+              ))}
+            </ul>
+          )
         }
         return (
           <div
@@ -194,7 +198,7 @@ class Jobs extends Component {
             />
             <h1 style={{color: '#ffffff'}}>Oops! Something Went Wrong</h1>
             <p style={{color: '#b6c5ff'}}>
-              We cannot seem to find the page you are looking for.
+              We cannot seem to find the page you are looking for
             </p>
             <button type="button" onClick={this.loadJobs}>
               Retry
@@ -207,7 +211,7 @@ class Jobs extends Component {
   }
 
   render() {
-    const {employmentTypes, salaryRange, searchInput, searchValue} = this.state
+    const {searchValue} = this.state
     return (
       <>
         <Header />
@@ -216,26 +220,29 @@ class Jobs extends Component {
             <div style={{marginBottom: '20px'}}>
               <ProfileDetails />
               <hr className="left-hr" />
-              <p className="filter-grp">Type of Employment</p>
-              {employmentTypesList.map(each => (
-                <div>
-                  <input
-                    type="checkbox"
-                    id={each.employmentTypeId}
-                    onChange={this.updateEmploymentTypes}
-                    value={each.employmentTypeId}
-                  />
-                  <label
-                    htmlFor={each.employmentTypeId}
-                    className="checkbox-label"
-                  >
-                    {each.label}
-                  </label>
-                </div>
-              ))}
+              <h1 className="filter-grp">Type of Employment</h1>
+              <ul style={{listStyle: 'none', paddingLeft: '0px'}}>
+                {employmentTypesList.map(each => (
+                  <li>
+                    <input
+                      type="checkbox"
+                      id={each.employmentTypeId}
+                      onChange={this.updateEmploymentTypes}
+                      value={each.employmentTypeId}
+                      key={each.employmentTypeId}
+                    />
+                    <label
+                      htmlFor={each.employmentTypeId}
+                      className="checkbox-label"
+                    >
+                      {each.label}
+                    </label>
+                  </li>
+                ))}
+              </ul>
             </div>
             <hr className="left-hr" />
-            <p className="filter-grp">Salary Range</p>
+            <h1 className="filter-grp">Salary Range</h1>
             {salaryRangesList.map(each => (
               <div>
                 <input
@@ -244,6 +251,7 @@ class Jobs extends Component {
                   id={each.salaryRangeId}
                   value={each.salaryRangeId}
                   onChange={this.updateSalaryRange}
+                  key={each.salaryRangeId}
                 />
                 <label htmlFor={each.salaryRangeId} className="checkbox-label">
                   {each.label}
@@ -264,6 +272,7 @@ class Jobs extends Component {
                 type="button"
                 className="search-btn"
                 onClick={this.updateSearchInput}
+                data-testid="searchButton"
               >
                 <BiSearch size={20} color="#cbd5e1" />
               </button>

@@ -14,6 +14,8 @@
   width: 8%;
   display: flex;
   justify-content: space-between;
+  list-style: none;
+  padding-left: 0px;
 }
 .header-para {
   color: #ffffff;
